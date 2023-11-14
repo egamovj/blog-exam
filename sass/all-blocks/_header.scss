@@ -1,0 +1,156 @@
+    nav {
+        background-color: $navbar-color;
+        .navbar {
+            @include center-items;
+            padding-top: 13px;
+            padding-bottom: 11px;
+            &__wrapper {
+                display: flex;
+                align-items: center;
+                column-gap: 83px;
+                &.active {
+                    transform: translateX(0);
+                }
+            }
+            &__menu {
+                display: flex;
+                align-items: center;
+                column-gap: 24px;
+                &-list {
+                    list-style: none;
+                }
+                &-link {
+                    font-size: 16px;
+                    font-family: $secondary-font-family;
+                    font-weight: 400;
+                    color: $white-color;
+                    text-decoration: none;
+                    transition: all 0.4s linear;
+                    &:hover {
+                        color: $button-color;
+                    }
+                }
+            }
+            &__button {
+                font-size: 18px;
+                font-family: $primary-font-family;
+                font-weight: 700;
+                border: 1px solid transparent;
+                color: $navbar-color;
+                padding: 16px 48px;
+                transition: all 0.4s linear;
+                cursor: pointer;
+                &:hover {
+                    background: $navbar-color;
+                    color: $white-color;
+                    border-color: $white-color;
+                }
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+    
+    .hero {
+        background: url('../../images/hero-bg.png');
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 128px;
+        padding-bottom: 192px;
+        margin-bottom: 94px;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-right: 475px;
+            &-post {
+                margin-bottom: 24px;
+            }
+            &-title {
+                font-size: 50px;
+                font-family: $primary-font-family;
+                font-weight: 700;
+                color: $white-color;
+                margin-bottom: 24px;
+            }
+            &-span {
+                font-size: 16px;
+                font-family: $primary-font-family;
+                font-weight: 400;
+                color: $white-color;
+                margin-bottom: 16px;
+                & span {
+                    color: $button-color;
+                }
+            }
+            &-text {
+                font-size: 16px;
+                font-family: $secondary-font-family;
+                font-weight: 400;
+                color: $white-color;
+                padding-right: 205px;
+                margin-bottom: 46px;
+            }
+            & button {
+                font-size: 18px;
+                font-family: $primary-font-family;
+                font-weight: 700;
+                color: $navbar-color;
+                background: $button-color;
+                border: 1px solid transparent;
+                transition: all 0.4s linear;
+                padding: 16px 48px;
+                &:hover {
+                    background: transparent;
+                    color: $button-color;
+                    border-color: $button-color;
+                }
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: url('../images/hero-bg-2x.png');
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .navbar {
+            &__menu {
+                column-gap: 20px;
+            }
+        }
+        .hero {
+            &__wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding-right: 0;
+                &-title {
+                    font-size: 50px;
+                }
+                &-span {
+                    font-size: 18px;
+                }
+                &-text {
+                    font-size: 18px;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    
+    @include for-mobile() {}

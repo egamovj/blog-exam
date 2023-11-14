@@ -1,0 +1,120 @@
+.registerPage {
+    text-align: center;
+    padding-bottom: 158px;
+    &__content {
+        &-form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 22px;
+            & .form-group {
+                margin-bottom: 15px;
+                font-size: 16px;
+                color: #9DA2B5;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                & input {
+                    padding: 24px;
+                    width: 100%;
+                }
+                & .error-message {
+                    color: red;
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        &-title {
+            padding-top: 69px;
+            font-size: 48px;
+            font-family: $primary-font-family;
+            font-weight: 700;
+            color: $navbar-color;
+            margin-bottom: 68px;
+        }
+    }
+    &-search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        & input {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: none;
+            width: 100%;
+        }
+        & button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 15px;
+            border: 1px solid transparent;
+            border-left: none;
+            border-radius: 4px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            transition: all 0.4s linear;
+            cursor: pointer;
+            &:hover {
+                background-color: #fff;
+                color: #007bff;
+                border-color: #007bff;
+                border-left: 1px solid;
+            }
+            &:active {
+                transform: scale(0.96);
+            }
+        }
+    }
+    &-btn {
+        font-size: 24px;
+        font-family: $primary-font-family;
+        font-weight: 700;
+        color: $navbar-color;
+        padding: 16px 0;
+        background: $button-color;
+        border: 2px solid transparent;
+        transition: all 0.4s linear;
+        &:hover {
+            background: transparent;
+            color: $button-color;
+            border-color: $button-color;
+            font-weight: 500;
+        }
+    }
+    & #userList {
+        list-style: none;
+        padding: 0;
+        & li {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & button {
+                background-color: #ff0000;
+                font-size: 16px;
+                color: #fff;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                padding: 8px 12px;
+                transition: all 0.4s linear;
+                cursor: pointer;
+                &:hover {
+                    color: #ff0000;
+                    background-color: #fff;
+                    border-color: #ff0000;
+                }
+            }
+        }
+    }
+}

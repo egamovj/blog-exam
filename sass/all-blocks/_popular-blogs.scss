@@ -1,0 +1,67 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    border-bottom: 1px solid $black-color;
+    padding-bottom: 66px;
+    margin-bottom: 69px;
+    &__title {
+        font-size: 36px;
+        font-family: $primary-font-family;
+        font-weight: 700;
+        color: $black-color;
+    }
+    &__wrapper {
+        display: flex;
+        column-gap: 32px;
+        &-content {
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s linear;
+            &:hover {
+                transition: all 0.2s ease-out;
+                box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+                top: -4px;
+                border: 1px solid #cccccc;
+                background-color: white;
+                transform: scale(0.98);
+            }
+            & span {
+                margin-top: 32px;
+                font-size: 14px;
+                font-family: $secondary-font-family;
+                font-weight: 500;
+                margin-bottom: 16px;
+                & span {
+                    color: #592EA9;
+                }
+            }
+            & h2 {
+                font-size: 28px;
+                font-family: $primary-font-family;
+                font-weight: 700;
+                color: $navbar-color;
+                margin-bottom: 16px;
+            }
+            & p {
+                font-size: 16px;
+                font-family: $secondary-font-family;
+                font-weight: 400;
+                color: $navbar-color;
+            }
+        }
+    }
+}
+
+@include for-tablet() {
+    .blog {
+        &__title {
+            text-align: center;
+            font-size: 30px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+@import './fonts';
+@import './variables';
+@import './mixins';
+@import './all-blocks/header';
+@import './all-blocks/popular-blogs';
+@import './all-blocks/category';
+@import './all-blocks/category-file';
+@import './all-blocks/all-posts';
+@import './all-blocks/register';
+@import './all-blocks/_footer';

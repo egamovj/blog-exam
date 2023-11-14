@@ -1,0 +1,17 @@
+@mixin for-tablet() {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin for-mobile() {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin center-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

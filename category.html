@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oC5e0aC00cPAL4JAIrjiDoPTQT8X+RYxPn1I1uBddvq9B6EGGoM1WINDF5vHlywD" crossorigin="anonymous">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+    <!-- FAVICON END -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <a href="./index.html"><img src="./images/icons/logo.svg" alt="Logo"></a>
+                    <div class="navbar__wrapper" id="mainListDiv">
+                        <ul class="navbar__menu">
+                            <li class="navbar__menu-list">
+                                <a class="navbar__menu-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="navbar__menu-list">
+                                <a class="navbar__menu-link" href="./category.html">Category</a>
+                            </li>
+                            <li class="navbar__menu-list">
+                                <a class="navbar__menu-link" href="./all-posts.html">All posts</a>
+                            </li>
+                            <li class="navbar__menu-list">
+                                <a class="navbar__menu-link" href="#">About us</a>
+                            </li>
+                        </ul>
+                        <a href="./register.html"><button class="navbar__button">Register</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="business">
+            <div class="container">
+                <div class="business__wrapper">
+                    <h1>Business</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <span>Blog > Business</span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <div class="content__wrapper">
+                    <form id="form">
+                        <input type="text" id="searchInput" placeholder="Enter keywords">
+                        <button type="submit">Search</button>
+                    </form>
+                    <div class="loading">
+                        <div class="lds-ring">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="notFoundMessage" style="display: none;">Ma'lumot topilmadi.</div>
+                    <div class="content__wrapper-news" id="newsContainer"></div>
+                    <ul class="pagination"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wrapper-text">
+                    <address>Finstreet 118 2561 Fintown</address>
+                    <p>Hello@finsweet.com 020 7993 2905</p>
+                </div>
+                <div>
+                    <ul class="footer__wrapper-socials">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./images/icons/Negative.svg" alt=""></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><img src="./images/icons/twitter.svg" alt=""></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="./images/icons/instagram.svg" alt=""></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ru.linkedin.com/" target="_blank"><img src="./images/icons/linkedin.svg" alt=""></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
