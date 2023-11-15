@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //  d31bd4f44a6b4d96bb34b43396382429
-const NEWS_API_URL = 'https://newsapi.org/v2/everything?q=Business&from=2023-11-13&sortBy=popularity&apiKey=d31bd4f44a6b4d96bb34b43396382429';
+const NEWS_API_URL = 'https://newsapi.org/v2/everything?q=Business&from=2023-11-14&sortBy=popularity&apiKey=d31bd4f44a6b4d96bb34b43396382429';
 const loading = document.querySelector('.loading');
 const notFoundMessage = document.querySelector('.notFoundMessage');
 const searchInput = document.getElementById('searchInput');

@@ -1,5 +1,5 @@
 /* --------- RENDER DATAS TO THE DOM --------- */
-const NEWS_API_URL = 'https://newsapi.org/v2/everything?q=All&from=2023-11-13&sortBy=popularity&apiKey=d31bd4f44a6b4d96bb34b43396382429';
+const NEWS_API_URL = 'https://newsapi.org/v2/everything?q=All&from=2023-11-14&sortBy=popularity&apiKey=d31bd4f44a6b4d96bb34b43396382429';
 const searchInput = document.getElementById('searchInput');
 const form = document.getElementById('form');
 const loading = document.querySelector('.loading');
