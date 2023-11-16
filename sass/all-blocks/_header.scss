@@ -103,6 +103,7 @@
                 border: 1px solid transparent;
                 transition: all 0.4s linear;
                 padding: 16px 48px;
+                cursor: pointer;
                 &:hover {
                     background: transparent;
                     color: $button-color;
